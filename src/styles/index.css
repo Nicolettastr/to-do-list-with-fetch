@@ -1,12 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
 
-/* 
+body {
+    width: 100vw;
+    height: 100%;
+    margin: 20px;
+    display: grid;
+    place-content: center;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.taskList-container{
+    display: grid;
+    place-content: center;
+}
 
-*/
+.text-center{
+    width: 600px;
+    height: fit-content;
+    background-color: #702283;
+    padding: 20px 0;
+    border-radius: 20px;
+}
+
+.list-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.taskItem {
+    width: 80%;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    margin: 4px 25px 0px 0 ;
+    background-color: #d2ebcd;
+    border: 2px #552e5a solid;
+    border-radius: 15px;
+}
+
+.input {
+    border: 3px black solid;
+    border-radius: 15px;
+    width: 90%;
+    height: 40px;
+    background-color: #fffdfb;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.inactive {
+    opacity: 0;
+}
+
+.inactive:hover{
+    background-color: purple;
+    opacity: 1;
+}
+
+.element {
+    font-size: 22px;
+}
