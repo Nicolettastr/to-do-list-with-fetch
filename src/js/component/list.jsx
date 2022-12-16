@@ -1,4 +1,5 @@
 import React from "react";
+import DailyTask from "./dailyTask.jsx";
 import Task from "./task.jsx";
 
 const List = (props) => {
@@ -8,7 +9,7 @@ const List = (props) => {
     });
 
     const taskElementItems = props.taskElement.map((item, index) => {
-        return <Task key={index} taskE={item.task} />
+        return <DailyTask key={index} id={index} taskE={item.task} removeDailyTask={props.removeDailyTask}/>
     })
 
 

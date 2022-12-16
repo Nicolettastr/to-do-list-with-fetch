@@ -38,6 +38,11 @@ const Home = () => {
     setTaskItems([...taskItem]);
   };
 
+  const removeDailyTask = (index) => {
+    taskElement.splice(index, 1);
+    setTaskElement([...taskElement])
+  }
+
   return (
     <section className="taskList-container"> 
       <div className="text-center">
@@ -45,7 +50,7 @@ const Home = () => {
           <Input handlekeyUp={handlekeyUp} />
         </div>
         <div>
-          <List taskItem={taskItem} removeTask={removeTask} taskElement={taskElement}/>
+          <List taskItem={taskItem} removeTask={removeTask} taskElement={taskElement} removeDailyTask={removeDailyTask}/>
         </div>
       </div>
     </section>

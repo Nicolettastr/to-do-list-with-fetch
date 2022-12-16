@@ -7,7 +7,7 @@ const Task = (props) => {
 
   return (
     <div className="d-flex taskItem">
-        <li className="element">{props.item} {props.taskE} </li>
+        <li className="element">{props.item}</li>
         <button
           type="button"
           className="btn-close btn inactive"
