@@ -7,14 +7,25 @@ const List = (props) => {
         return <Task item={item} key={index} index={index} removeTask={props.removeTask} taskList={props.taskList}/>
     });
 
+    const taskElementItems = props.taskElement.map((item, index) => {
+        return <Task key={index} taskE={item.task} />
+    })
+
 
     return (
-        <section>
-            <ul className="list-section">
-                {taskList}
-            </ul>
-        </section>
-    )
+      <section>
+        <ul>
+          <div className="list-section div-section">
+            <h2>Your tasks</h2>
+            {taskList}
+          </div>
+          <div className="list-section div-section">
+            <h3>Your daily tasks</h3>
+            {taskElementItems}
+          </div>
+        </ul>
+      </section>
+    );
 };
 
 export default List;

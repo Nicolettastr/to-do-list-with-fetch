@@ -13,6 +13,10 @@ body {
     place-content: center;
 }
 
+ul {
+    padding: 0;
+}
+
 .taskList-container{
     display: grid;
     place-content: center;
@@ -24,14 +28,41 @@ body {
     background-color: #702283;
     padding: 20px 0;
     border-radius: 20px;
+    display: grid;
+    place-content: center;
 }
 
 .list-section {
-    width: 100%;
+    width: 500px;
+    height:fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #a2c11c;
+    border-radius: 15px;
+    padding-bottom: 15px;
+    margin: 8px;
+}
+
+.list-section h2,
+.list-section h3 {
+    height: 50px;
+    margin: 8px;
+    color: white;
+    background-color: #005792;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-section h2 {
+    width: 40%;
+}
+
+.list-section h3 {
+    width: 50%;
 }
 
 .taskItem {
@@ -68,4 +99,5 @@ body {
 
 .element {
     font-size: 22px;
+    text-transform: capitalize;
 }
