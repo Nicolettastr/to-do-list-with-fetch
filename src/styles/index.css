@@ -25,7 +25,7 @@ ul {
 .text-center{
     width: 600px;
     height: fit-content;
-    background-color: #702283;
+    background-color: rgb(31, 23, 100);
     padding: 20px 0;
     border-radius: 20px;
     display: grid;
@@ -39,7 +39,7 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #a2c11c;
+    background-color: rgb(156, 153, 153);
     border-radius: 15px;
     padding-bottom: 15px;
     margin: 8px;
@@ -50,7 +50,6 @@ ul {
     height: 50px;
     margin: 8px;
     color: white;
-    background-color: #005792;
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -72,8 +71,8 @@ ul {
     align-items: center;
     padding: 0 15px;
     margin: 4px 25px 0px 0 ;
-    background-color: #d2ebcd;
-    border: 2px #552e5a solid;
+    background-color: white;
+    border: 2px #070707 solid;
     border-radius: 15px;
 }
 
