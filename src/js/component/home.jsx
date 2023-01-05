@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import GetApi from "../services/GetApi.js";
+import PutApi from "../services/PutApi.js";
 import Input from "./input.jsx";
 import List from "./list.jsx";
 
@@ -9,9 +11,7 @@ const Home = () => {
   let [taskElement, setTaskElement] = useState([]);
 
   useEffect(() => {
-    fetch("https://assets.breatheco.de/apis/fake/todos/user/nicolettastru")
-    .then((response) => response.json())
-    .then((data) => {
+    GetApi().then((data) => {
       const taskData = data.map((taskName) => {
         return {
           task: taskName.label
@@ -21,6 +21,10 @@ const Home = () => {
       setTaskElement(taskData)
     })
   }, [])
+
+  useEffect(()=> {
+    PutApi(taskItem)
+  }, [taskItem])
   
 
     console.log(taskElement)
@@ -46,6 +50,7 @@ const Home = () => {
   return (
     <section className="taskList-container"> 
       <div className="text-center">
+        <h2>To do list</h2>
         <div>
           <Input handlekeyUp={handlekeyUp} />
         </div>

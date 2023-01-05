@@ -17,11 +17,10 @@ const List = (props) => {
       <section>
         <ul>
           <div className="list-section div-section">
-            <h2>Your tasks</h2>
+            <h2>Tasks</h2>
             {taskList}
           </div>
           <div className="list-section div-section">
-            <h3>Your daily tasks</h3>
             {taskElementItems}
           </div>
         </ul>

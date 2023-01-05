@@ -11,7 +11,7 @@ const Input = (props) => {
 
   return (
     <>
-      <input type="text" onKeyUp={handleKey} className="input" placeholder="Introduce your task"/>
+      <input type="text" onKeyUp={handleKey} className="input" placeholder="Introduce new task"/>
     </>
   );
 };
